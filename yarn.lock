@@ -9,8 +9,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@ticlo/core@file:../breezeflow/node_modules/@ticlo/core":
-  version "0.0.3"
+"@ticlo/core@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@ticlo/core/-/core-0.0.4.tgz#582486ff32d0ff537ba4b6c8b8a75a2e63bbc782"
+  integrity sha512-NF5rXaDwEkioRuNVk2QmXOGX1A1TqqhzapgHg6dKJxTWAlNIM30fLDTrXnNinYRvIThzg/HvJrjIaLqW2MRsCA==
   dependencies:
     denque "^1.4.1"
     i18next "^19.0.3"
@@ -18,15 +20,19 @@
     moment "^2.24.0"
     qs "^6.9.1"
 
-"@ticlo/express@file:../breezeflow/node_modules/@ticlo/express":
-  version "0.0.3"
+"@ticlo/express@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@ticlo/express/-/express-0.0.4.tgz#f9cde183fbe380ffe8c496f7a437c59f3f7364ce"
+  integrity sha512-DsBGN8mdQAoAYzL4IBb/h4pla6CNAPAndg1c6JHH7iAATH83EOEJoszGVRKGSydvOIYFCeRC7tm5lL4c105F9A==
   dependencies:
     body-parser "^1.19.0"
     express "^4.17.1"
     express-ws "^4.0.0"
 
-"@ticlo/node@file:../breezeflow/node_modules/@ticlo/node":
-  version "0.0.3"
+"@ticlo/node@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@ticlo/node/-/node-0.0.4.tgz#a7aced16a5f077a17de5593ecf9ffaeddbc2bc26"
+  integrity sha512-oX07y7N0Qshxud8EMzxMsWodlbihDzlNA4y5Rx+eyD7Nx4d2mA7XeZuqpHiWK+H/ybkAvWUjhLlduO/+Ckn09g==
   dependencies:
     ws "^7.2.1"
 
