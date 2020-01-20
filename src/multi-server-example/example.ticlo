@@ -1,0 +1,108 @@
+{
+"#is": "",
+"note": {
+ "#is": "note",
+ "@b-p": [
+  "text",
+  "color",
+  "background",
+  "border"
+ ],
+ "@b-xyw": [
+  26.796875,
+  28,
+  453
+ ],
+ "text": "this is example of routing to multiple servers\ntry these links:\nport 8012\nhttp://localhost:8012/ticlo1/test\nhttp://localhost:8012/ticlo2/test\nport 8013:\nhttp://localhost:8013/ticlo3/test"
+},
+"route1": {
+ "#is": "http:route",
+ "@b-p": [
+  "server",
+  "path"
+ ],
+ "@b-xyw": [
+  46.796875,
+  234,
+  227
+ ],
+ "contentType": [
+  "empty"
+ ],
+ "method": [
+  "GET"
+ ],
+ "path": "/test",
+ "~server": "^server1.output"
+},
+"route2": {
+ "#is": "http:route",
+ "@b-p": [
+  "server",
+  "path"
+ ],
+ "@b-xyw": [
+  304.796875,
+  239,
+  222
+ ],
+ "contentType": [
+  "empty"
+ ],
+ "method": [
+  "GET"
+ ],
+ "path": "/test",
+ "~server": "^server2.output"
+},
+"route3": {
+ "#is": "http:route",
+ "@b-p": [
+  "server",
+  "path"
+ ],
+ "@b-xyw": [
+  560.796875,
+  237,
+  234
+ ],
+ "contentType": [
+  "empty"
+ ],
+ "method": [
+  "GET"
+ ],
+ "path": "/test",
+ "~server": "^server3.output"
+},
+"static-response1": {
+ "#is": "http:static-response",
+ "#sync": true,
+ "@b-p": [
+  "data"
+ ],
+ "@b-xyw": "route1",
+ "data": "test 1",
+ "~#call": "##.route1.#emit"
+},
+"static-response2": {
+ "#is": "http:static-response",
+ "#sync": true,
+ "@b-p": [
+  "data"
+ ],
+ "@b-xyw": "route2",
+ "data": "test 2",
+ "~#call": "##.route2.#emit"
+},
+"static-response3": {
+ "#is": "http:static-response",
+ "#sync": true,
+ "@b-p": [
+  "data"
+ ],
+ "@b-xyw": "route3",
+ "data": "test 3",
+ "~#call": "##.route3.#emit"
+}
+}

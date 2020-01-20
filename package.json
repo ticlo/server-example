@@ -1,0 +1,30 @@
+{
+  "name": "server-example",
+  "version": "0.0.2",
+  "description": "ticlo server example",
+  "scripts": {
+    "basic-example": "ts-node src/basic-example/main.ts",
+    "route-example": "ts-node src/route-example/main.ts",
+    "multi-server-example": "ts-node src/multi-server-example/main.ts",
+    "custom-function-example": "ts-node src/custom-function-example/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ticlo/server-example.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ticlo/core": "^0.0.4",
+    "@ticlo/express": "^0.0.4",
+    "@ticlo/node": "^0.0.4",
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

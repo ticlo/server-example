@@ -1,0 +1,44 @@
+{
+"#is": "",
+"delay": {
+ "#is": "my:delay",
+ "#more": [],
+ "@b-p": [
+  "delay",
+  "output"
+ ],
+ "@b-xyw": [
+  349.796875,
+  176,
+  243
+ ],
+ "delay": 5
+},
+"get-time": {
+ "#is": "my:get-time",
+ "@b-p": [
+  "output"
+ ],
+ "@b-xyw": [
+  624.796875,
+  331,
+  243
+ ],
+ "~#call": "##.delay.output"
+},
+"sort-string": {
+ "#is": "my:sort-string",
+ "0": "b",
+ "1": "a",
+ "@b-p": [
+  "0",
+  "1",
+  "output"
+ ],
+ "@b-xyw": [
+  24.796875,
+  179,
+  234
+ ]
+}
+}

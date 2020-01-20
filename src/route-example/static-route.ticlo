@@ -1,0 +1,48 @@
+{
+"#is": "",
+"note": {
+ "#is": "note",
+ "@b-p": [
+  "text",
+  "color",
+  "background",
+  "border"
+ ],
+ "@b-xyw": [
+  70.796875,
+  38,
+  336
+ ],
+ "text": "this is a basic example http route\ntry this link:\nhttp://localhost:8011/ticlo/static"
+},
+"route": {
+ "#is": "http:route",
+ "@b-p": [
+  "server",
+  "path"
+ ],
+ "@b-xyw": [
+  80,
+  160,
+  150
+ ],
+ "contentType": [
+  "empty"
+ ],
+ "method": [
+  "GET"
+ ],
+ "path": "/static",
+ "~server": "^server.output"
+},
+"static-response": {
+ "#is": "http:static-response",
+ "#sync": true,
+ "@b-p": [
+  "data"
+ ],
+ "@b-xyw": "route",
+ "data": "hello world",
+ "~#call": "##.route.#emit"
+}
+}
